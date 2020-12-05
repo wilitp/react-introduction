@@ -63,7 +63,7 @@ Pero esto no es javascript, y no podemos escribirlo esperando que nuestro navega
 ```html
 <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
 ```
-Con este, estamos importando Babel, un compilador que va a interpretar nuestro código JSX y ejecutará su equivalente javascript. Pero para esto debemos agregar un atributo a nuestro script tag reemplazando
+Con este, estamos importando Babel, un compilador que va a interpretar nuestro código JSX y ejecutará su equivalente javascript. Pero para este interprete nuestro archivo, debemos agregar un atributo a nuestro script tag, reemplazando
 
 ```html 
 <script src="./index.js" defer></script>
@@ -73,3 +73,5 @@ por
 ```html 
 <script type="text/babel" src="./index.js" defer></script>
 ```
+
+¡Felicidades! Ya podés abrir index.html en tu navegador y leer "Hola Mundo!", renderizado por React.
