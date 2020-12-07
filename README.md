@@ -52,7 +52,7 @@ const div = React.createElement('div', {
 Como podemos ver, leer un arbol de elementos creados de esta forma puede ser difícil, sobretodo si nuestra aplicación es más compleja que esta.
 
 ## Solución
-Por este problema es que el equipo de React creó una sintáxis llamada JSX, que es muy parecida a HTML. Con esta, el código de arriba se equivale a lo siguiente:
+Por este problema es que el equipo de React creó una sintáxis llamada JSX, que es muy parecida a HTML. Con esta, el código de arriba equivale a lo siguiente:
 
 ```jsx
 const div = <div><p>Hola Mundo!</p></div>
@@ -63,7 +63,7 @@ Pero esto no es javascript, y no podemos escribirlo esperando que nuestro navega
 ```html
 <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
 ```
-Con este, estamos importando Babel, un compilador que va a interpretar nuestro código JSX y ejecutará su equivalente javascript. Pero para este interprete nuestro archivo, debemos agregar un atributo a nuestro script tag, reemplazando
+Con este, estamos importando Babel, un compilador que va a interpretar nuestro código JSX y ejecutará su equivalente javascript. Pero para que este interprete nuestro archivo, debemos agregar un atributo a nuestro script tag, reemplazando
 
 ```html 
 <script src="./index.js" defer></script>
